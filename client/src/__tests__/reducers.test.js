@@ -9,7 +9,7 @@ import {
 } from '../utils/actions';
 
 // create a sample of what our global state will look like
-const initalState = {
+const initialState = {
     products: [],
     categories: [{ name: 'Food' }],
     currentCategory: '1',
@@ -22,5 +22,5 @@ test('UPDATE_PRODUCTS', () => {
     });
 
     expect(newState.products.length).toBe(2);
-    expect(initalState.products.length).toBe(0);
+    expect(initialState.products.length).toBe(0);
 });
